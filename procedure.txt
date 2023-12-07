@@ -1,0 +1,78 @@
+﻿For the Machine 
+* Follow the schematic above
+* From the Arduino (lower row first, left to right):
+   * 5V - Dark Red Wire
+      * Provides positive (red) row on the breadboard with 5V
+   * GND - Black Wire
+      * Provides negative (black) row on the breadboard with a negative terminal
+   * A4 - Gray Wire
+      * Connects to the SDA (Serial Data Pin) port on the INA219 current sensor
+         * Transmit the data from the sensor to the Arduino.
+   * A5 - Light Green Wire
+      * Connects to the SCL (Serial Clock Pin) port on the INA219 sensor
+   * 13 - Gray wire
+      * Connects to the SCK (Serial Clock) port on the Micro SD module
+   * 12 - Yellow wire
+      * Passes through a 330-ohm resistor, which connects to the MISO port on the Micro SD module.
+         * MISO port stands for Master In Slave Out, which outputs the SPI data from the module
+   * 11 - Light Green Wire
+      * Connects to the MOSI port on the Micro SD module
+         * MOSI stands for Master Out Slave In, which is the input pin of the SD card module
+   * 10 - Light Blue Wire
+      * Connects to the CS port on the Micro SD module
+         * CS stands for Chip Select, and can be controlled by the arduino to either enable or disable the module
+   * 8 - Pink Wire
+      * Connects to the RS (Register Select) pin on the 16x2 LCD
+         * Controls the memory of the LCD in which data is written 
+   * 7 - Brown Wire 
+      * Connects to the E (Enable) pin on the 16x2 LCD
+         * Enables writing to the
+   * 6-  Purple Wire
+      * Connects to D7 (data point) on the 16x2 LCD
+   * 5- Cyan Wire
+      * Connects to D6 on the 16x2 LCD
+   * 4 - Brown Wire        
+      * Connects to D5 on the 16x2 LCD
+   * 3 - Orange Wire
+      * Connects to D4
+   * 2 - Yellow Wire
+      * Connects to the data pin of the DHT11 Temperature sensor
+   * Remaining Red Wires
+      * Connects to the positive terminal (Red, 5V) on the breadboard
+   * Remaining Black Wires
+      * Connects to the negative terminals (Black, GND) on the breadboard
+* Protective box
+   * Download and print the following STL Files (3D models)
+      * Big_yllw_box is the main box that holds all the components
+      * Lid is placed on top of the box with the solar panels. 
+      * Platform placed on top of the structure on the lid. It also includes the pins to hold the panels at an angle
+      * Fancy_stick includes extra pins of different sizes, if needed
+   * Besides the STL Files, a binder clip is also needed to hold the angle still.
+* Assemble the machine
+   * Place the Arduino and the Breadboard inside the box (after all the connections are made) 
+   * Glue the Micro SD module and temperature sensor to the side
+      * If available, glue a popsicle stick to the side and glue the temperature sensor to the end of it
+   * Glue the 4 solar panels to the platform. Glue the bottom of the 2 lower panels alongside the lower border of the platform in order to assure symmetry.
+   * After they are glued, connect the positive and negative terminals into the respective terminals of the current sensor.
+   * Plug in the included USB cable into the computer and load the provided code (Daniel_paniel.ino) into the Arduino.
+      * Download the Arduino IDE, if not already installed
+         * Download here
+      * If all goes right, the data should be displayed in the serial monitor, alongside with “Initialization done”
+* Getting ready for testing
+   * Insert the Micro SD into the module
+   * Place the machine on the desired location
+      * Preferably with sunshine throughout the whole day
+   * Set the solar panel at the desired angle
+   * When ready, plug in the included Arduino power cable into the portable battery
+      * After that, if the circuit is working properly, the LCD should briefly display “SD card working” and display the data.
+* After the data is collected
+   * Unplug the machine from the battery
+   * Connect the Micro SD card to the computer
+   * Save and analyze the “DATA.CSV” file
+* Data Analysis
+   * Use the daniel_plotter&time.py file
+      * Download a Python IDE, if not already installed.
+         * Spyder is a free, available option, compatible with both MacOS and Windows
+      * Edit the file path to the file with the gathered data
+   * The program will ask for the start hour and minute
+      * With that information, it will plot the data and save the time frames into a separate CSV file.
