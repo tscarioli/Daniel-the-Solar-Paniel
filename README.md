@@ -13,3 +13,7 @@ Originally developed as a science fair project, this project focuses on collecti
 - solar_panel_3.0.ino — Arduino code for collecting solar panel data
 - daniel_plotter&time.py — Python script to plot the data and generate a cleaned CSV with aligned time frames
 - *.stl — 3D-printed components for the physical setup
+  
+## Extended Documentation
+A detailed experimental report (originally written for a science fair) describing methodology, data collection, analysis, and results is available here:
+[[Cloudy With a Chance of Watts – Extended Report]]([url](https://docs.google.com/document/d/16tUJxvruujUyR5aDmuzsYLoWMRIIk42igs2avQnI8-w/edit?usp=sharing))
