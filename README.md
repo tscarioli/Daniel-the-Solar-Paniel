@@ -15,5 +15,5 @@ Originally developed as a science fair project, this project focuses on collecti
 - *.stl — 3D-printed components for the physical setup
   
 ## Extended Documentation
-A detailed experimental report (originally written for a science fair) describing methodology, data collection, analysis, and results is available here:
-[Cloudy With a Chance of Watts – Extended Report]([url](https://docs.google.com/document/d/16tUJxvruujUyR5aDmuzsYLoWMRIIk42igs2avQnI8-w/edit?usp=sharing))
+A detailed experimental report describing the methodology, data collection, analysis, and results is available here:  
+[Cloudy With a Chance of Watts – Extended Report](https://docs.google.com/document/d/16tUJxvruujUyR5aDmuzsYLoWMRIIk42igs2avQnI8-w)
