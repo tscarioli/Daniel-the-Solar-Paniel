@@ -16,4 +16,4 @@ Originally developed as a science fair project, this project focuses on collecti
   
 ## Extended Documentation
 A detailed experimental report (originally written for a science fair) describing methodology, data collection, analysis, and results is available here:
-[[Cloudy With a Chance of Watts – Extended Report]]([url](https://docs.google.com/document/d/16tUJxvruujUyR5aDmuzsYLoWMRIIk42igs2avQnI8-w/edit?usp=sharing))
+[Cloudy With a Chance of Watts – Extended Report]([url](https://docs.google.com/document/d/16tUJxvruujUyR5aDmuzsYLoWMRIIk42igs2avQnI8-w/edit?usp=sharing))
